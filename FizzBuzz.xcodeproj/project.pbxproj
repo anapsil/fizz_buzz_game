@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		37323E6920BF45C4007EE565 /* ViewControllerUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37323E6820BF45C4007EE565 /* ViewControllerUnitTests.swift */; };
+		37323E6B20BF5412007EE565 /* ViewControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37323E6A20BF5412007EE565 /* ViewControllerUITests.swift */; };
+		37323E6D20BF5B30007EE565 /* Move.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37323E6C20BF5B30007EE565 /* Move.swift */; };
 		3766E52020BEE900005A0173 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3766E51F20BEE900005A0173 /* AppDelegate.swift */; };
 		3766E52220BEE900005A0173 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3766E52120BEE900005A0173 /* ViewController.swift */; };
 		3766E52520BEE900005A0173 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3766E52320BEE900005A0173 /* Main.storyboard */; };
 		3766E52720BEE903005A0173 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3766E52620BEE903005A0173 /* Assets.xcassets */; };
 		3766E52A20BEE903005A0173 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3766E52820BEE903005A0173 /* LaunchScreen.storyboard */; };
-		3766E54020BEE903005A0173 /* FizzBuzzUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3766E53F20BEE903005A0173 /* FizzBuzzUITests.swift */; };
 		3766E54E20BEE9DD005A0173 /* BrainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3766E54D20BEE9DD005A0173 /* BrainTests.swift */; };
 		3766E55020BEEB02005A0173 /* Brain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3766E54F20BEEB02005A0173 /* Brain.swift */; };
 		3766E55220BEFD10005A0173 /* GameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3766E55120BEFD10005A0173 /* GameTests.swift */; };
@@ -37,6 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		37323E6820BF45C4007EE565 /* ViewControllerUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerUnitTests.swift; sourceTree = "<group>"; };
+		37323E6A20BF5412007EE565 /* ViewControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerUITests.swift; sourceTree = "<group>"; };
+		37323E6C20BF5B30007EE565 /* Move.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Move.swift; sourceTree = "<group>"; };
 		3766E51C20BEE900005A0173 /* FizzBuzz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FizzBuzz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3766E51F20BEE900005A0173 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3766E52120BEE900005A0173 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,7 +52,6 @@
 		3766E53020BEE903005A0173 /* FizzBuzzTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FizzBuzzTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3766E53620BEE903005A0173 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3766E53B20BEE903005A0173 /* FizzBuzzUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FizzBuzzUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3766E53F20BEE903005A0173 /* FizzBuzzUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FizzBuzzUITests.swift; sourceTree = "<group>"; };
 		3766E54120BEE903005A0173 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3766E54D20BEE9DD005A0173 /* BrainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrainTests.swift; sourceTree = "<group>"; };
 		3766E54F20BEEB02005A0173 /* Brain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brain.swift; sourceTree = "<group>"; };
@@ -111,6 +115,7 @@
 				3766E52B20BEE903005A0173 /* Info.plist */,
 				3766E54F20BEEB02005A0173 /* Brain.swift */,
 				3766E55320BF05C6005A0173 /* Game.swift */,
+				37323E6C20BF5B30007EE565 /* Move.swift */,
 			);
 			path = FizzBuzz;
 			sourceTree = "<group>";
@@ -121,6 +126,7 @@
 				3766E53620BEE903005A0173 /* Info.plist */,
 				3766E54D20BEE9DD005A0173 /* BrainTests.swift */,
 				3766E55120BEFD10005A0173 /* GameTests.swift */,
+				37323E6820BF45C4007EE565 /* ViewControllerUnitTests.swift */,
 			);
 			path = FizzBuzzTests;
 			sourceTree = "<group>";
@@ -128,8 +134,8 @@
 		3766E53E20BEE903005A0173 /* FizzBuzzUITests */ = {
 			isa = PBXGroup;
 			children = (
-				3766E53F20BEE903005A0173 /* FizzBuzzUITests.swift */,
 				3766E54120BEE903005A0173 /* Info.plist */,
+				37323E6A20BF5412007EE565 /* ViewControllerUITests.swift */,
 			);
 			path = FizzBuzzUITests;
 			sourceTree = "<group>";
@@ -266,6 +272,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37323E6D20BF5B30007EE565 /* Move.swift in Sources */,
 				3766E52220BEE900005A0173 /* ViewController.swift in Sources */,
 				3766E55020BEEB02005A0173 /* Brain.swift in Sources */,
 				3766E52020BEE900005A0173 /* AppDelegate.swift in Sources */,
@@ -279,6 +286,7 @@
 			files = (
 				3766E54E20BEE9DD005A0173 /* BrainTests.swift in Sources */,
 				3766E55220BEFD10005A0173 /* GameTests.swift in Sources */,
+				37323E6920BF45C4007EE565 /* ViewControllerUnitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,7 +294,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3766E54020BEE903005A0173 /* FizzBuzzUITests.swift in Sources */,
+				37323E6B20BF5412007EE565 /* ViewControllerUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

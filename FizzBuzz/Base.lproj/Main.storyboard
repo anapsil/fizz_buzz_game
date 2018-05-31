@@ -15,13 +15,13 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FizzBuzz" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="FizzBuzz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3 / 5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yc0-FC-Stc">
-                                <rect key="frame" x="350.66666666666669" y="20" width="43.333333333333314" height="28"/>
+                                <rect key="frame" x="350.66666666666669" y="40" width="43.333333333333314" height="28"/>
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
                                 <color key="textColor" red="0.97254901959999995" green="0.95294117649999999" blue="0.83137254900000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -31,19 +31,28 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0JP-AJ-nkA">
                                         <rect key="frame" x="0.0" y="0.0" width="160" height="160"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="numberButton"/>
                                         <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="70"/>
                                         <state key="normal" title="0" backgroundImage="button_border">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rLz-0r-kKl"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nu2-sE-VjU">
                                         <rect key="frame" x="173.66666666666663" y="0.0" width="160.33333333333337" height="160.33333333333334"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="fizzButton"/>
                                         <state key="normal" image="champagne" backgroundImage="button_border">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Oc7-zz-Nfk"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="42w-Zt-uF2">
                                         <rect key="frame" x="0.0" y="173.66666666666669" width="160.33333333333334" height="160.33333333333331"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="buzzButton"/>
                                         <state key="normal" image="lightning" backgroundImage="button_border">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
@@ -92,6 +101,7 @@
                             <constraint firstItem="q4Z-0k-6Jm" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="eJ3-qp-ny0" secondAttribute="leading" constant="100" id="I1W-Oe-WiG"/>
                             <constraint firstItem="eJ3-qp-ny0" firstAttribute="trailing" secondItem="q4Z-0k-6Jm" secondAttribute="trailing" constant="20" id="JV7-BI-QnL"/>
                             <constraint firstItem="UUL-uB-psw" firstAttribute="centerX" secondItem="eJ3-qp-ny0" secondAttribute="centerX" id="SqZ-6a-NQr"/>
+                            <constraint firstItem="Yc0-FC-Stc" firstAttribute="top" secondItem="eJ3-qp-ny0" secondAttribute="top" constant="20" id="TBA-Hu-DSQ"/>
                             <constraint firstItem="Yc0-FC-Stc" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="eJ3-qp-ny0" secondAttribute="leading" constant="100" id="XYk-qz-FLf"/>
                             <constraint firstItem="UUL-uB-psw" firstAttribute="leading" secondItem="eJ3-qp-ny0" secondAttribute="leading" constant="40" id="gGa-Rf-Wfs"/>
                             <constraint firstItem="eJ3-qp-ny0" firstAttribute="trailing" secondItem="UUL-uB-psw" secondAttribute="trailing" constant="40" id="hdK-BP-YdQ"/>
@@ -100,6 +110,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="eJ3-qp-ny0"/>
                     </view>
+                    <connections>
+                        <outlet property="buzzButton" destination="42w-Zt-uF2" id="vQs-Ia-DTc"/>
+                        <outlet property="fizzButton" destination="nu2-sE-VjU" id="xxA-Z9-906"/>
+                        <outlet property="fizzBuzzButton" destination="VTg-Ki-pc4" id="heK-sh-51H"/>
+                        <outlet property="numberButton" destination="0JP-AJ-nkA" id="e1O-hq-Zu3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

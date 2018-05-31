@@ -7,6 +7,7 @@
 //
 
 import XCTest
+
 @testable import FizzBuzz
 class BrainTests: XCTestCase {
     let brain = Brain()
@@ -44,18 +45,18 @@ class BrainTests: XCTestCase {
     }
     
     func testSayFizz() {
-        XCTAssertEqual(brain.check(number: 3), "Fizz")
+        XCTAssertEqual(brain.check(number: 3), Move.fizz)
     }
     
     func testSayBuzz() {
-        XCTAssertEqual(brain.check(number: 5), "Buzz")
+        XCTAssertEqual(brain.check(number: 5), Move.buzz)
     }
     
     func testSayFizzBuzz() {
-        XCTAssertEqual(brain.check(number: 15), "FizzBuzz")
+        XCTAssertEqual(brain.check(number: 15), Move.fizzbuzz)
     }
     
     func testSayNumber() {
-        XCTAssertEqual(brain.check(number: 1), "1")
+        XCTAssertEqual(brain.check(number: 1), Move.number)
     }
 }
