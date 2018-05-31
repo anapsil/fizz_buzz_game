@@ -89,4 +89,36 @@ class ViewControllerUITests: XCTestCase {
         XCTAssertEqual(newScore, "15")
     }
     
+    func testWrongMoveLabelIsNotVisibleOnLaunch() {
+        let wrongMoveLabel = app.staticTexts["wrongMoveLabel"]
+        XCTAssertFalse(wrongMoveLabel.exists)
+    }
+
+    func testStopAfterWrongMove() {
+        let fizzButton = app.buttons["fizzButton"]
+        let wrongMoveLabel = app.staticTexts["wrongMoveLabel"]
+        let gameView = app.otherElements["gameView"]
+        
+        fizzButton.tap()
+
+        XCTAssertTrue(wrongMoveLabel.exists)
+        XCTAssertTrue(wrongMoveLabel.isHittable)
+        XCTAssertFalse(gameView.exists)
+    }
+    
+    func testPlayAgainTapRestarsGame() {
+        let numberButton = app.buttons["numberButton"]
+        let fizzButton = app.buttons["fizzButton"]
+        let playAgainButton = app.buttons["playAgainButton"]
+        let wrongMoveLabel = app.staticTexts["wrongMoveLabel"]
+//        let gameView = app.otherElements["gameView"]
+        
+        numberButton.tap()
+        fizzButton.tap()
+        playAgainButton.tap()
+        
+        XCTAssertFalse(wrongMoveLabel.exists)
+//        XCTAssertTrue(gameView.exists)
+        XCTAssertEqual(numberButton.label, "0")
+    }
 }
